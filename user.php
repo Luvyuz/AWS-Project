@@ -1,5 +1,5 @@
 <?php
-require "/php/connect.php";
+require "php/connect.php";
 session_start();
 if(!isset($_SESSION['logged']) AND $_SESSION['logged'] === false){
 	header("Location: index.html");

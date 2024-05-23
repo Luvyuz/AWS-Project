@@ -1,8 +1,8 @@
 <?php
 $dbhost = "localhost";
 $dbuser = "root";
-$dbpass = "mariadb";
-$dbname = "AWS";
+$dbpass = "";
+$dbname = "aws";
 $dbport = 3306;
 $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname, $dbport);
 
