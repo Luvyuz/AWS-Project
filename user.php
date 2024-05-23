@@ -1,3 +1,11 @@
+<?php
+require "/php/connect.php";
+session_start();
+if(!isset($_SESSION['logged']) AND $_SESSION['logged'] === false){
+	header("Location: index.html");
+	return;
+}
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -12,7 +20,7 @@
 <body>
 	<div class="container">
 		<h1>AWS Project</h1>
-
+        
 				</div>
 			</form>
 		</div>

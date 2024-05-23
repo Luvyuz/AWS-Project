@@ -1,11 +1,11 @@
 <?php
-require "./import/connect.php";
+require "connect.php";
 session_start();
 
 $email = strtolower($_POST['email']);
 $password = md5($_POST['password']);
 if(isset($_SESSION['logged']) AND $_SESSION['logged'] === true){
-	header("Location: ../");
+	header("Location: ../user.php");
 	return;
 }
 if(isset($email) && isset($password)){
