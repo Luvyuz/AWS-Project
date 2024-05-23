@@ -9,7 +9,7 @@ if(isset($_SESSION['logged']) AND $_SESSION['logged'] === true){
 	return;
 }
 if(isset($email) && isset($password)){
-	$sql = "SELECT * FROM users
+	$sql = "SELECT * FROM utente
 			WHERE email = '$email' AND password = '$password'";
 	$res = $conn -> query($sql);
 	
